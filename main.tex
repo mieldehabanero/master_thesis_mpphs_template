@@ -21,44 +21,44 @@
 
 % COVER PAGE, TITLE PAGE AND IMPRINT PAGE
 \if\thesisStatus f
-    \include{template/pages/cover}
+    \import{template/pages/}{cover}
 \fi
 \pagenumbering{roman}
-\include{template/pages/title}
+\import{template/pages/}{title}
 \if\thesisStatus f
-    \include{template/pages/imprint}
+    \import{template/pages/}{imprint}
 \fi
 
 % ABSTRACT & ACKNOWLEDGEMENTS
-\include{frontmatter/abstract}
-\include{frontmatter/acknowledgements}
+\import{frontmatter/}{abstract}
+\import{frontmatter/}{acknowledgements}
 
 % CONTENTS LIST (TABLE OF CONTENTS, FIGURES, TABLES)
-\include{template/pages/contents}
+\import{template/pages/}{contents}
 
 % BEGINNING OF MAIN DOCUMENT
 \pagenumbering{arabic}  % Arabic numbering starting from 1 (one)
 
 % CHAPTERS
-\include{chapters/introduction}
-\include{chapters/theory}
-\include{chapters/methods}
-\include{chapters/results}
-\include{chapters/conclusion}
+\import{chapters/}{introduction}
+\import{chapters/}{theory}
+\import{chapters/}{methods}
+\import{chapters/}{results}
+\import{chapters/}{conclusion}
 
 % REFERENCES / BIBLIOGRAPHY
-\include{template/pages/bibliography}
+\import{template/pages/}{bibliography}
 
 % APPENDICES
 \cleardoublepage
 \appendix
 \pagenumbering{bychapter}
-\include{appendices/first_appendix}
-\include{appendices/second_appendix}
+\import{appendices/}{first_appendix}
+\import{appendices/}{second_appendix}
 
 % LAST PAGE
 \if\thesisStatus f
-    \include{template/pages/lastpage}
+    \import{template/pages/}{lastpage}
 \fi
 
 \end{document}
