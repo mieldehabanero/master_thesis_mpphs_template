@@ -30,8 +30,8 @@
 \fi
 
 % ABSTRACT & ACKNOWLEDGEMENTS
-\import{frontmatter/}{abstract}
-\import{frontmatter/}{acknowledgements}
+\subimport{frontmatter/}{abstract}
+\subimport{frontmatter/}{acknowledgements}
 
 % CONTENTS LIST (TABLE OF CONTENTS, FIGURES, TABLES)
 \import{template/pages/}{contents}
@@ -40,11 +40,11 @@
 \pagenumbering{arabic}  % Arabic numbering starting from 1 (one)
 
 % CHAPTERS
-\import{chapters/}{introduction}
-\import{chapters/}{theory}
-\import{chapters/}{methods}
-\import{chapters/}{results}
-\import{chapters/}{conclusion}
+\subimport{chapters/}{introduction}
+\subimport{chapters/}{theory}
+\subimport{chapters/}{methods}
+\subimport{chapters/}{results}
+\subimport{chapters/}{conclusion}
 
 % REFERENCES / BIBLIOGRAPHY
 \import{template/pages/}{bibliography}
@@ -53,8 +53,8 @@
 \cleardoublepage
 \appendix
 \pagenumbering{bychapter}
-\import{appendices/}{first_appendix}
-\import{appendices/}{second_appendix}
+\subimport{appendices/}{first_appendix}
+\subimport{appendices/}{second_appendix}
 
 % LAST PAGE
 \if\thesisStatus f
