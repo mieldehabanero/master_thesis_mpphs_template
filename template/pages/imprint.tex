@@ -14,7 +14,15 @@
 \else
 	Handledare:
 \fi
-\thesisSupervisor\\
+\thesisSupervisorMain\\
+\ifdefined\thesisSupervisorSecond
+	\if\thesisType M
+		Supervisor:
+	\else
+		Handledare:
+	\fi
+	\thesisSupervisorSecond\\
+\fi
 \if\thesisType M
 	Examiner:
 \else
