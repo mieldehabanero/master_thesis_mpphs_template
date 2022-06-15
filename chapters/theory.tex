@@ -1,58 +1,58 @@
 \chapter{Theory}
 
-In the following sections, examples of a figure, an equation, a table, a chemical structure, a list, a listing and a to-do note are shown.
-These examples are not particularly well-made\dots%
-\footnote{Here is another footnote to illustrate cross-chapter numbering.}
+In the following sections, examples of a figure, an equation, a table, a
+chemical structure, a list, a listing and a to-do note are shown. These
+examples are not particularly well-made\dots\footnote{Here is another footnote
+	to illustrate cross-chapter numbering.}%
 
 \section{Figure}
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{chapters/theory/X.pdf}
-    \includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{chapters/theory/Y.pdf}
-    \caption{Surface and contour plots showing the two dimensional function $z(x,y)=\sin(x+y)\cos(2x)$.}
+	\centering
+	\includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{chapters/theory/X.pdf}
+	\includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{chapters/theory/Y.pdf}
+	\caption{Surface and contour plots showing the two dimensional function $z(x,y)=\sin(x+y)\cos(2x)$.}
 \end{figure}
 
 \section{Equation}
 \begin{equation}
-    f(t)=\left\{%
-    \begin{array}{ll}
-        1,\qquad & t< 1 \\
-        t^2 & t\geq 1
-    \end{array}\right.
+	f(t)=\left\{%
+	\begin{array}{ll}
+		1,\qquad & t< 1    \\
+		t^2      & t\geq 1
+	\end{array}\right.
 \end{equation}
 
 \section{Table}
 \begin{table}[H]
-    \centering
-    \caption[This (instead of the potentially long caption) appears in the list of tables.]{Values of $f(t)$ for $t=0,1,\dots 5$.}
-    \begin{tabular}{lllllll}
-        \toprule
-        $t$ & 0 & 1 & 2 & 3 & 4 & 5 \\ \midrule
-        $f(t)$ & 1 & 1 & 4 & 9 & 16 & 25 \\ \bottomrule
-    \end{tabular}
+	\centering
+	\caption[This (instead of the potentially long caption) appears in the list of tables.]{Values of $f(t)$ for $t=0,1,\dots 5$.}
+	\begin{tabular}{lllllll}
+		\toprule
+		$t$    & 0 & 1 & 2 & 3 & 4  & 5  \\ \midrule
+		$f(t)$ & 1 & 1 & 4 & 9 & 16 & 25 \\ \bottomrule
+	\end{tabular}
 \end{table}
 
 \section{Chemical structure}
 \begin{center}
-    \chemfig{X*5(-E-T-A-L-)}
+	\chemfig{X*5(-E-T-A-L-)}
 \end{center}
 
 \section{List}
 \begin{enumerate}
-    \item The first item
-    \begin{enumerate}
-        \item Nested item 1
-        \item Nested item 2
-    \end{enumerate}
-    \item The second item
-    \item The third item
-    \item \dots
+	\item The first item
+	      \begin{enumerate}
+		      \item Nested item 1
+		      \item Nested item 2
+	      \end{enumerate}
+	\item The second item
+	\item The third item
+	\item \dots
 \end{enumerate}
 
 \section{Source code listing}
-An example of a source code listing.
-The output can be drastically improved with the optional settings.
-\lstset{language=Matlab}
+An example of a source code listing. The output can be drastically improved
+with the optional settings. \lstset{language=Matlab}
 \begin{lstlisting}[frame=single]
 % Generate x- and y-nodes
 x = linspace(0, 1);
@@ -67,4 +67,7 @@ end
 \end{lstlisting}
 
 \section{To-do note}
-The \texttt{todo} package enables to-do notes to be added in the page margin. This can be a very convenient way of making notes in the document during the process of writing. All notes can be hidden by using the option \emph{disable} when loading the package in the settings. \todo{Example of a to-do note.}
+The \texttt{todo} package enables to-do notes to be added in the page margin.
+This can be a very convenient way of making notes in the document during the
+process of writing. All notes can be hidden by using the option \emph{disable}
+when loading the package in the settings. \todo{Example of a to-do note.}

@@ -10,65 +10,64 @@
 \copyright~\thesisAuthor, \thesisYear.
 
 \if\thesisType M
-    Supervisor:
+	Supervisor:
 \else
-    Handledare:
+	Handledare:
 \fi
 \thesisSupervisor\\
 \if\thesisType M
-    Examiner:
+	Examiner:
 \else
-    Examinator:
+	Examinator:
 \fi
 \thesisExaminer
 
 \if\thesisType M
-    Master's Thesis
+	Master's Thesis
 \else
-    Kandidatarbete
+	Kandidatarbete
 \fi
 \thesisYear\\
 \thesisDepartment\\
 \thesisDivision\\
 \ifx\thesisGroup\undefined
 \else
-\thesisGroup\\
+	\thesisGroup\\
 \fi
 \thesisUniversity\\
 \thesisImprintLocation\\
 \if\thesisType M
-    Telephone:
+	Telephone:
 \else
-    Telefon:
+	Telefon:
 \fi
 \thesisUniversityTel
 
 \vfill
 \ifx\thesisCoverFigure\undefined
 \else
-    \if\thesisType M
-        Cover:
-    \else
-        Omslag:
-    \fi
-    \thesisCoverFigureCaption
-    \setlength{\parskip}{\baselineskip}
-\fi
+	\if\thesisType M
+		Cover:
+	\else
+		Omslag:
+	\fi
+	\thesisCoverFigureCaption
+	\setlength{\parskip}{\baselineskip} \fi
 
 \if\thesisType M
-    Typeset in
+	Typeset in
 \else
-    Typsatt i
+	Typsatt i
 \fi
 \LaTeX\\
 \ifx\thesisPrintedBy\undefined
 \else
-    \if\thesisType M
-        Printed by
-    \else
-        Tryckt av
-    \fi
-    \thesisPrintedBy\\
+	\if\thesisType M
+		Printed by
+	\else
+		Tryckt av
+	\fi
+	\thesisPrintedBy\\
 \fi
 \thesisLocation\ \thesisYear
 \endgroup
