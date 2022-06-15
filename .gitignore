@@ -280,6 +280,3 @@ TSWLatexianTemp*
 
 # Package backup files
 *.bak[0-9]*
-
-# Tikzexternalize cache
-cache
