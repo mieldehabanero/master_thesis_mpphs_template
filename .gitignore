@@ -279,8 +279,7 @@ TSWLatexianTemp*
 .DS_Store 
 
 # Package backup files
-*.bak0
-*.bak1
+*.bak[0-9]*
 
 # Tikzexternalize cache
 cache
